@@ -17,15 +17,4 @@
     </tableOptions>
   </persistence>
 
-  <features>
-    <boundary name="Example Boundary Feature" />
-    <block name="Example Block Feature" />
-    <limiter name="Example Limiter Feature" />
-    <toggle name="Example Toggle Feature"/>
-  </features>
-
-  <executionSecurables>
-    <securable name="Example Securable" />
-  </executionSecurables>
-
 </appManifest>
