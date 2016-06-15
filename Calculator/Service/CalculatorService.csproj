@@ -8,8 +8,8 @@
     <ProjectGuid>{B11E36B1-DA5B-4B4F-9705-F43764CF807A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Service</RootNamespace>
-    <AssemblyName>Service</AssemblyName>
+    <RootNamespace>CalculatorService</RootNamespace>
+    <AssemblyName>CalculatorService</AssemblyName>
     <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <StartArguments>
     </StartArguments>
@@ -83,14 +83,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataTransferObject.cs" />
-    <Compile Include="IService.cs" />
+    <Compile Include="Calculation.cs" />
+    <Compile Include="ICalculator.cs" />
     <Compile Include="ISilverlightClientAccessPolicy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service.cs" />
+    <Compile Include="Calculator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ReleaseFiles Include="bin\release\*.*" />

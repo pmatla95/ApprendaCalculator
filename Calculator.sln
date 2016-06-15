@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Scripts", "Database Scripts", "{41ED928C-A8F6-449B-8F27-030789C6BF2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Calculator\Service\Service.csproj", "{B11E36B1-DA5B-4B4F-9705-F43764CF807A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorService", "Calculator\Service\CalculatorService.csproj", "{B11E36B1-DA5B-4B4F-9705-F43764CF807A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "root", "Calculator\root\root.csproj", "{033138F1-1D4E-41BE-B07D-6AB6449D5689}"
 EndProject

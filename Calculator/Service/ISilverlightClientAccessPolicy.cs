@@ -2,7 +2,7 @@ using System.IO;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 
-namespace Service
+namespace CalculatorService
 {
     [ServiceContract]
     public interface ISilverlightClientAccessPolicy

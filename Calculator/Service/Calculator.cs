@@ -1,16 +1,42 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.ServiceModel.Web;
 using System.Text;
 
-namespace Service
+namespace CalculatorService
 {
-    public class Service : IService, ISilverlightClientAccessPolicy
+    public class Calculator : ICalculator, ISilverlightClientAccessPolicy
     {
-        public DataTransferObject SomeMethod(DataTransferObject data)
+        public Calculation Add(Calculation data)
         {
+            data.Result = data.Operand1 + data.Operand2;
             return data;
         }
-
+        public Calculation Subtract(Calculation data)
+        {
+            data.Result = data.Operand1 - data.Operand2;
+            return data;
+        }
+        public Calculation Multiply(Calculation data)
+        {
+            data.Result = data.Operand1 * data.Operand2;
+            return data;
+        }
+        public Calculation Divide(Calculation data)
+        {
+            data.Result = data.Operand1 / data.Operand2;
+            return data;
+        }
+        public Calculation SquareRoot(Calculation data)
+        {
+            data.Result = Math.Sqrt(data.Operand1);
+            return data;
+        }
+        public string[] GetCalculationAudits()
+        {
+            throw new NotImplementedException();
+        }
         public Stream GetClientAccessPolicy()
         {
             const string result =
@@ -34,6 +60,11 @@ namespace Service
             }
 
             return new MemoryStream(Encoding.UTF8.GetBytes(result));
+        }
+
+        public string[] GetCaculationAudits()
+        {
+            throw new NotImplementedException();
         }
     }
 }
